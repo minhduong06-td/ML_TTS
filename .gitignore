@@ -1,0 +1,40 @@
+/tts/
+/web/
+/tree.md
+
+# Dataset: only English metadata and download pointer
+/data/*
+!/data/en_ljspeech/
+/data/en_ljspeech/*
+!/data/en_ljspeech/metadata.csv
+!/data/en_ljspeech/wavs.txt
+
+# Runs: only two English download pointers
+/vits_runs/*
+!/vits_runs/en/
+/vits_runs/en/*
+!/vits_runs/en/en_ljspeech_vits_real/
+/vits_runs/en/en_ljspeech_vits_real/*
+!/vits_runs/en/en_ljspeech_vits_real/phoneme_cache.txt
+!/vits_runs/en/en_ljspeech_vits_real/en_ljspeech_vits_real-November-23-2026_11+57PM-0000000.txt
+
+# Vietnamese phase remains local
+/vits_engine/recipes/local/train_vits_vi.py
+/vits_engine/TTS/tts/utils/text/vietnamese/
+
+# Binary assets, model weights and caches
+*.wav
+*.npy
+*.pth
+*.pt
+*.ckpt
+*.tfevents.*
+*.zip
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
