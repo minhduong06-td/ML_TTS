@@ -1,0 +1,41 @@
+{
+  "metadata": "data/en_ljspeech/metadata.csv",
+  "counts": {
+    "records": 13100,
+    "valid_records": 13100,
+    "orphan_wavs": 0,
+    "invalid_columns": 0,
+    "invalid_ids": 0,
+    "duplicate_ids": 0,
+    "missing_wavs": 0,
+    "empty_text": 0,
+    "read_errors": 0
+  },
+  "wav_files": 13100,
+  "wav_headers_checked": 13100,
+  "header_errors": [],
+  "audio_format_mismatches": [],
+  "sample_rates": {
+    "22050": 13100
+  },
+  "channels": {
+    "1": 13100
+  },
+  "duration_seconds": {
+    "total": 86117.07628117915,
+    "min": 1.1100680272108843,
+    "max": 10.096190476190475,
+    "bins": {
+      "5-<10s": 9597,
+      "1-<5s": 3313,
+      ">=10s": 190
+    }
+  },
+  "normalized_text_characters": {
+    "min": 13,
+    "max": 188,
+    "mean": 100.55473282442748
+  },
+  "issues": [],
+  "orphan_wavs": []
+}
