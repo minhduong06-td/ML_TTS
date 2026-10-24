@@ -4,9 +4,6 @@ from unicodedata import normalize
 from .english.abbreviations import abbreviations_en
 from .english.number_norm import normalize_numbers as en_normalize_numbers
 from .english.time_norm import expand_time_english
-from .vietnamese.abbreviations import abbreviations_vi
-from .vietnamese.number_norm import normalize_numbers as vi_normalize_numbers
-from .vietnamese.time_norm import expand_time_vietnamese
 _whitespace_re = re.compile(r"\s+")
 _uroman = None
 
@@ -15,6 +12,8 @@ def expand_abbreviations(text: str, lang: str = "en") -> str:
     if lang == "en":
         abbreviations = abbreviations_en
     elif lang == "vi":
+        from .vietnamese.abbreviations import abbreviations_vi
+
         abbreviations = abbreviations_vi
     else:
         msg = f"Language {lang} not supported in expand_abbreviations"
@@ -78,6 +77,11 @@ def uroman_cleaners(text: str) -> str:
 
 
 def vietnamese_cleaners(text: str) -> str:
+    # The Vietnamese helpers are kept local to the Vietnamese phase. Importing
+    # them inside the function keeps them out of the English import path.
+    from .vietnamese.number_norm import normalize_numbers as vi_normalize_numbers
+    from .vietnamese.time_norm import expand_time_vietnamese
+
     text = normalize_unicode(text)
     text = lowercase(text)
     text = expand_time_vietnamese(text)
