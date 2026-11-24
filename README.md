@@ -1,3 +1,4 @@
+[en_20261124_095356_76166314.wav](https://github.com/user-attachments/files/35309363/en_20261124_095356_76166314.wav)
 # VITS text-to-speech
 
 VITS is a single-stage end-to-end TTS model: one network maps phonemes to a
@@ -35,8 +36,8 @@ voice per checkpoint.
 
 | Sentence | Recording |
 |---|---|
-| Hello everybody, we are team 11 | [`en_20261124_095356_76166314.wav`](https://github.com/minhduong06-td/ML_TTS/raw/main/assets/en_20261124_095356_76166314.wav) |
-| Ha Noi university of science and technology is the best university of the world | [`en_20261124_095646_8e8c01fb.wav`](https://github.com/minhduong06-td/ML_TTS/raw/main/assets/en_20261124_095646_8e8c01fb.wav) |
+| Hello everybody, we are team 11 | [en_20261124_095356_76166314.wav](https://github.com/user-attachments/files/35309373/en_20261124_095356_76166314.wav) |
+| Ha Noi university of science and technology is the best university of the world | [en_20261124_095646_8e8c01fb.wav](https://github.com/user-attachments/files/35309387/en_20261124_095646_8e8c01fb.wav) |
 
 To record new samples, start the local web demo and open it in the browser:
 
