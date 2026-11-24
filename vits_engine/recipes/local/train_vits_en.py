@@ -3,7 +3,7 @@ import os
 import sys
 from pathlib import Path
 
-# Prefer the active environment?s eSpeak when Python is invoked without activation.
+# Prefer the active environment's eSpeak when Python is invoked without activation.
 os.environ["PATH"] = str(Path(sys.executable).absolute().parent) + os.pathsep + os.environ.get("PATH", "")
 
 from vits_common import (
